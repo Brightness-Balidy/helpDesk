@@ -159,12 +159,6 @@
             <li><a href="" id="estender2"><i class="material-symbols-outlined small">confirmation_number</i>Bilheteria</a></li>
             <li ><a href="#!" id="estender3"><i class="material-symbols-outlined small">train</i>Viagem</a></li>
             
-            
-
-            
-
-           
-            
         </ul>
 
         <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
