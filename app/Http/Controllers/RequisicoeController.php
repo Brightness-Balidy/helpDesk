@@ -3,15 +3,15 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use App\Models\Requisicao;
-class RequisicaoController extends Controller
+use App\Models\Requisicoe;
+class RequisicoeController extends Controller
 {
     /**
      * Display a listing of the resource.
      */
     public function index()
     {
-        $requisicao = Requisicao::all();
+        $requisicoes= Requisicoe::all();
         return view('site/home');
     }
 

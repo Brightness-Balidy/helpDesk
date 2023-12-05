@@ -14,7 +14,8 @@ class SolucaoSeeder extends Seeder
     public function run()
     {
         Solucao::create([
-            'descricao'=>' o problema foi resolvido activando a opção de actualizações com trafego limitado'
+            'descricao'=>' o problema foi resolvido activando a opção de actualizações com trafego limitado',
+            'id_requisicao'=>'1'
         ]);
     }
 }
