@@ -217,5 +217,11 @@
         }
     </script>
        @yield('conteudo')
+       <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="{{asset('js/chart.js')}}" ></script>
+    <script src="{{asset('js/main.js')}}"></script>
+    @stack('graficos')
+
 </body>
 </html>
