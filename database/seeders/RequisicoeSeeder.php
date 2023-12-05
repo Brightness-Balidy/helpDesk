@@ -13,11 +13,11 @@ class RequisicoeSeeder extends Seeder
     public function run()
     {
         Requisicoe::create([
-            'titulo'=>'Mouse problem',
-            'descricao'=> 'o mouse fica a piscar sem parar e as vezes desaparece da tela',
-            'id_categoria'=> '1',
-            'id_estado'=> '1',
-            'id_user'=> '1'
+            'titulo'=>'Pc nao funciona',
+            'descricao'=> 'o computador caiu da mesa e toda vez que liga fica a tela preta',
+            'id_categoria'=> '2',
+            'id_estado'=> '2',
+            'id_user'=> '2'
         ]);
     }
 }

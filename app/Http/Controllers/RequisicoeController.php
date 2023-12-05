@@ -12,7 +12,8 @@ class RequisicoeController extends Controller
     public function index()
     {
         $requisicoes= Requisicoe::all();
-        return view('site/home');
+        return view('site/home', compact('requisicoes'));
+
     }
 
     /**

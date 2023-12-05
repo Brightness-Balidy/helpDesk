@@ -16,8 +16,8 @@
 </style>
 
 
-<div class="row container mainRow bg-warning">
-    <div class="row bg-success rowConteudo">
+<div class="row container mainRow ">
+    <div class="row rowConteudo">
         <div class="col s12 ">
       <div id="create" class="">
         <div class="modal-content bg-gradient-green">
@@ -34,6 +34,10 @@
               <div class="input-field col s6">
                 <input id="sobrenome" name="sobrenome" type="text" class="validate">
                 <label for="sobrenome">Descricao</label>
+              </div>
+              <div class="input-field col s6">
+                <input id="sobrenome" name="sobrenome" type="text" class="validate">
+                <label for="sobrenome">Categoria</label>
               </div>
             </div>
             <div class="row mt-3">
@@ -52,13 +56,13 @@
       </div>
     </div>
     </div>
-
+@foreach ($requisicoes as $requisicao)
     <div class="row">
         <div class="col s12 m6">
           <div class="card blue-grey darken-1">
             <div class="card-content white-text">
-              <span class="card-title"><h5>Titulo</h5></span>
-              <p>Este espaço é reservado para conter a descrição do problema ocorrido para que possa posteriormente ser resolvido.
+              <span class="card-title"><h5>{{$requisicao->titulo}}</h5></span>
+              <p>{{$requisicao->descricao}}
               </p>
             </div>
             <div class="card-action">
@@ -68,7 +72,7 @@
           </div>
         </div>
       </div>
-      
+      @endforeach
      
        <!-- Tap Target Structure -->
   <div class="tap-target" data-target="menu">

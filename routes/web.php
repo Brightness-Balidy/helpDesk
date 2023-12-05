@@ -1,6 +1,6 @@
 <?php
 
-use App\Http\Controllers\RequisicaoController;
+use App\Http\Controllers\RequisicoeController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -15,4 +15,4 @@ use Illuminate\Support\Facades\Route;
 */
 
 //rota da requisicao
-Route::get('/requisicao',[RequisicaoController::class,'index'])->name('site.home');
+Route::get('/requisicao',[RequisicoeController::class,'index'])->name('site.home');

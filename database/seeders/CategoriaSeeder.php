@@ -14,7 +14,7 @@ class CategoriaSeeder extends Seeder
     public function run(): void
     {
         Categoria::create([
-            'tipo' => 'problema de software'
+            'tipo' => 'problema de hardware'
         ]);
     }
 }
