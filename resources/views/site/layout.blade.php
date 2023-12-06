@@ -122,7 +122,7 @@
     <!--Data target do dropdown-->
     <!--not working-->
     <ul id='dropdown1' class='dropdown-content'>
-        <li><a href="">Log out</a></li>
+        <li><a href="{{Route('login.logout')}}">Log out</a></li>
    </ul>
 
     <!--navbar principal-->
@@ -136,7 +136,7 @@
 
             @auth
             <ul id="nav-mobile" class="right">
-                <li><a href="#" class="dropdown-trigger" data-target='dropdown1'> Olá, user <i class="material-symbols-outlined right">expand_more</i></a></li>
+                <li><a href="#" class="dropdown-trigger" data-target='dropdown1'> Olá, {{auth()->user()->nome}} <i class="material-symbols-outlined right">expand_more</i></a></li>
             </ul>
             @else
             <ul id="nav-mobile" class="right">
